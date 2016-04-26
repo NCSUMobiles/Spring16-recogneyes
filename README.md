@@ -22,7 +22,6 @@ downloading the application.
 
 ### Future Work:
 - Secure the entire website with OAuth (currently, it isn't authenticated)
-- It would be cool if users can create an album on the website and share them with specific groups of people
 - Difficulty settings to play at easy and medium level is not implemented.
 - It would also be convenient for the Gallery screen to have a filter (on the ActionBar) public/private content or categories
 
