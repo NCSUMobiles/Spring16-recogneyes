@@ -7,8 +7,7 @@ Nischal Shrestha (nshrest@ncsu.edu)
 
 Current iteration: Arjun Sharma(asharm24@ncsu.edu) Dani Chiavegatto(dychiave@ncsu.edu) Mason Lesser(malesser@ncsu.edu) Julian Patterson(jcpatte2@ncsu.edu) Vasil Uhnyuck(vuhnyuc2@ncsu.edu)
 
-Development Repo: https://github.ncsu.edu/jcpatte2/Recognize
-Submission Repo: https://github.com/NCSUMobiles/Spring16-recogneyes
+Repo: https://github.com/NCSUMobiles/Spring16-recogneyes
 
 ### What is Recognize?
 
