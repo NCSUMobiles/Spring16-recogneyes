@@ -7,6 +7,9 @@ Nischal Shrestha (nshrest@ncsu.edu)
 
 Current iteration: Arjun Sharma(asharm24@ncsu.edu) Dani Chiavegatto(dychiave@ncsu.edu) Mason Lesser(malesser@ncsu.edu) Julian Patterson(jcpatte2@ncsu.edu) Vasil Uhnyuck(vuhnyuc2@ncsu.edu)
 
+Development Repo: https://github.ncsu.edu/jcpatte2/Recognize
+Submission Repo: https://github.com/NCSUMobiles/Spring16-recogneyes
+
 ### What is Recognize?
 
 Recognize is a simple image-based quiz game. There are plenty of apps out there that let you participate in quiz games, but most of these are primarily text based. Recognize is different in that it uses images. Specifically, players are asked to identify one of the image choices as being somehow related to the main image, which is filtered with some effect (ex: blur) and slowly turns into the original image on the screen. 
