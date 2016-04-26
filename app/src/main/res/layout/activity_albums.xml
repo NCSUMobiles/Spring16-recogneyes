@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             tools:context=".AlbumsActivity"
+             android:background="#383641">
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="0dp"-->
+        <!--android:background="#f6921e"-->
+        <!--android:text="@string/albumchooser"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="25sp"-->
+        <!--android:scaleType="center"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/icon_back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@drawable/ic_arrow_back_white_18dp"-->
+        <!--android:contentDescription="@string/back_button_desc"/>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat"/>
+
+    <GridView
+        android:layout_below="@+id/my_toolbar"
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:layout_gravity="center_horizontal"/>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".MainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1F242F"
+                android:baselineAligned="false"
+                android:id="@+id/main_frame">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/game_vertical_margin"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/start_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/game_horizontal_margin"
+        android:layout_marginRight="@dimen/game_horizontal_margin"
+        android:paddingBottom="@dimen/game_padding"
+        android:paddingLeft="@dimen/game_padding"
+        android:paddingRight="@dimen/game_padding"
+        android:paddingTop="@dimen/game_padding"
+        >
+
+        <!--<Button-->
+            <!--android:id="@+id/correlate"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/round_button_main"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+            <!--android:text="@string/correlate_button"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--/>-->
+
+        <Button
+            android:id="@+id/match"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button_main"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/play"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/odd_man_out"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/round_button_main"-->
+            <!--android:layout_below="@+id/match"-->
+            <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+            <!--android:text="ODD MAN OUT"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_horizontal_margin"
+        android:layout_marginRight="@dimen/game_horizontal_margin"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/albums_view"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginTop="@dimen/game_padding"
+            android:layout_marginRight="@dimen/game_horizontal_margin"
+            android:src="@drawable/ic_collections_white_48dp"
+            android:background="@drawable/album_icon_bg"
+            android:contentDescription="@string/theme_albums"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="3dp"
+            app:riv_border_width="2dp"
+            app:riv_border_color="#ffffff"
+            app:riv_oval="false"
+            />
+
+        <ImageView
+            android:id="@+id/settings_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/game_padding"
+            android:layout_toRightOf="@+id/albums_view"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/recognize_settings"
+            android:contentDescription="@string/theme_options"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

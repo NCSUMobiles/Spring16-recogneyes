@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+
+apply plugin: 'android'
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.recognize.match"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            moduleName "AndroidImageFilter"
+        }
+    }
+
+//    productFlavors
+//            {
+//                x86
+//                        {
+//                            ndk
+//                                    {
+//                                        abiFilter "x86"
+//                                    }
+//                        }
+//                armv7a
+//                        {
+//                            ndk
+//                                    {
+//                                        abiFilter "armeabi-v7a"
+//                                    }
+//                        }
+//            }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'mips'
+            universalApk false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':recognize')
+    // BEGIN Google APIs
+    // Play Services will validate the application prior to allowing OAuth2 access.
+    // The following lines implement maven imports as defined at:
+    // https://code.google.com/p/google-api-java-client/wiki/Setup
+    // Add the Google API client library.
+    compile('com.google.api-client:google-api-client:1.21.0') {
+        // Exclude artifacts that the Android SDK/Runtime provides.
+        exclude(group: 'xpp3', module: 'xpp3')
+        exclude(group: 'org.apache.httpcomponents', module: 'httpclient')
+        exclude(group: 'junit', module: 'junit')
+        exclude(group: 'com.google.android', module: 'android')
+    }
+    // Add the Android extensions for the Google API client library.
+    // This will automatically include play services as long as you have download that library
+    // from the Android SDK manager.
+    // Add the Android extensions for the Google API client library.
+    compile('com.google.api-client:google-api-client-android:1.21.0') {
+        // Exclude play services, since we're not using this yet.
+//        exclude(group: 'com.google.android.gms:play-services', module: 'google-play-services')
+    }
+    // END Google APIs
+    // The following client libraries make HTTP/JSON on Android easier.
+    // Android extensions for Google HTTP Client.
+    compile('com.google.http-client:google-http-client-android:1.21.0') {
+        exclude(group: 'com.google.android', module: 'android')
+    }
+    // For circular reveal effect and rounded views
+    compile 'com.google.http-client:google-http-client-jackson2:1.20.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.1.0'
+    compile 'com.makeramen:roundedimageview:2.1.2'
+}

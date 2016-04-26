@@ -1,0 +1,95 @@
+<io.codetail.widget.RevealFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Put more views here if you want, it's stock frame layout  -->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/main_image"-->
+        <!--style="@style/CardView"-->
+        <!--app:cardBackgroundColor="#74D2F8"-->
+        <!--app:cardElevation="2dp"-->
+        <!--app:cardPreventCornerOverlap="false"-->
+        <!--app:cardUseCompatPadding="true"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/bot_image"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:background="#8bc53f"-->
+        <!--android:contentDescription="@string/desc"-->
+        <!--android:paddingBottom="@dimen/game_padding"-->
+        <!--android:paddingTop="@dimen/game_padding"-->
+        <!--android:layout_gravity="center" />-->
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/game_padding"
+            android:paddingTop="@dimen/game_padding"
+            android:src="@drawable/prince_0"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/middle_image"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:layout_below="@+id/main_image"-->
+            <!--android:layout_alignParentBottom="@+id/filter_image"-->
+            <!--android:contentDescription="@string/desc"-->
+            <!--android:paddingBottom="@dimen/game_padding"-->
+            <!--android:paddingTop="@dimen/game_padding"-->
+            <!--android:background="#ffffff"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <ImageView
+            android:id="@+id/filter_image"
+            android:layout_width="1dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/desc"
+            android:layout_marginTop="@dimen/game_padding"
+            android:layout_marginBottom="@dimen/game_padding"
+            android:paddingBottom="@dimen/game_padding"
+            android:paddingTop="@dimen/game_padding"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/overlay_image"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:layout_alignTop="@id/bot_image"-->
+        <!--android:layout_alignLeft="@id/bot_image"-->
+        <!--android:layout_alignRight="@id/bot_image"-->
+        <!--android:layout_alignBottom="@id/bot_image"-->
+        <!--android:contentDescription="@string/desc"-->
+        <!--android:paddingBottom="@dimen/game_padding"-->
+        <!--android:paddingTop="@dimen/game_padding"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/picket"-->
+        <!--android:visibility="invisible"/>-->
+
+
+</io.codetail.widget.RevealFrameLayout>

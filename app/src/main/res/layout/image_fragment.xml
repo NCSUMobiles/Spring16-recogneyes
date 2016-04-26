@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameManagerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/game_vertical_margin"
+    android:paddingLeft="@dimen/game_horizontal_margin"
+    android:paddingRight="@dimen/game_horizontal_margin"
+    android:paddingTop="@dimen/game_vertical_margin"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/main_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="@dimen/main_image"
+            android:layout_height="@dimen/main_image"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/theme_rounded_green_bg"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/game_padding"
+            android:paddingTop="@dimen/game_padding"
+            android:paddingRight="@dimen/game_padding"
+            android:paddingLeft="@dimen/game_padding"
+            android:src="@drawable/prince_0"/>
+        <ImageView
+            android:id="@+id/main_image_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/thumbdesc"
+            android:padding="5dp"
+            android:layout_alignTop="@id/main_image"
+            android:layout_alignBottom="@id/main_image"
+            android:layout_alignLeft="@id/main_image"
+            android:layout_alignRight="@id/main_image"
+            android:scaleType="fitXY"
+            android:alpha="0.5"
+            android:background="@drawable/theme_grey_bg"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:id="@+id/reveal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_image_layout"
+        android:layout_alignLeft="@id/main_image_layout"
+        android:layout_alignRight="@id/main_image_layout"
+        android:layout_alignBottom="@id/main_image_layout"
+        android:paddingBottom="@dimen/game_padding"
+        android:paddingTop="@dimen/game_padding"
+        android:paddingRight="@dimen/game_padding"
+        android:paddingLeft="@dimen/game_padding"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/circle_main_image"
+            android:layout_width="@dimen/main_image"
+            android:layout_height="@dimen/main_image"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/theme_rounded_green_bg"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/game_padding"
+            android:paddingTop="@dimen/game_padding"
+            android:paddingRight="@dimen/game_padding"
+            android:paddingLeft="@dimen/game_padding"
+            android:src="@drawable/prince_0"/>
+
+        <ImageView
+            android:id="@+id/outer_main_image"
+            android:layout_width="@dimen/main_image"
+            android:layout_height="@dimen/main_image"
+            android:layout_gravity="center"
+            android:layout_alignTop="@id/circle_main_image"
+            android:layout_alignLeft="@id/circle_main_image"
+            android:layout_alignRight="@id/circle_main_image"
+            android:layout_alignBottom="@id/circle_main_image"
+            android:background="#000000"
+            android:contentDescription="@string/desc"
+            android:paddingBottom="@dimen/game_padding"
+            android:paddingTop="@dimen/game_padding"
+            android:paddingRight="@dimen/game_padding"
+            android:paddingLeft="@dimen/game_padding"
+            android:alpha="0.98"
+            android:visibility="invisible"/>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <!--Scan line effect layout-->
+    <FrameLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/game_padding"
+        android:paddingTop="@dimen/game_padding"
+        android:paddingRight="@dimen/game_padding"
+        android:paddingLeft="@dimen/game_padding"
+        android:layout_alignTop="@id/main_image_layout"
+        android:layout_alignLeft="@id/main_image_layout"
+        android:layout_alignRight="@id/main_image_layout"
+        android:layout_alignBottom="@id/main_image_layout"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/scanline"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/scanline_flip"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/start_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/game_padding"
+        android:paddingTop="@dimen/game_padding"
+        android:paddingRight="@dimen/game_padding"
+        android:paddingLeft="@dimen/game_padding"
+        android:layout_alignTop="@id/scan_layout"
+        android:layout_alignLeft="@id/scan_layout"
+        android:layout_alignRight="@id/scan_layout"
+        android:layout_alignBottom="@id/scan_layout"
+        >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="@string/start_buton"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            />
+    </FrameLayout>
+
+    <!--Grid rows-->
+    <LinearLayout
+        android:id="@+id/grid_row_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reveal"
+        android:layout_marginTop="@dimen/game_horizontal_margin"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/thumbs1"
+            android:layout_width="@dimen/answer"
+            android:layout_height="@dimen/answer"
+            android:layout_marginRight="12dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:contentDescription="@string/thumbdesc"
+            android:src="@drawable/prince_0"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:riv_border_width="5dp"
+            app:riv_border_color="#F9CB4D"
+            app:riv_oval="false" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/thumbs2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/thumbdesc"
+            android:maxHeight="100dp"
+            android:src="@drawable/prince_0"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:riv_border_width="5dp"
+            app:riv_border_color="#F9CB4D"
+            app:riv_oval="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_row_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_row_1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        android:layout_marginTop="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/thumbs3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/thumbdesc"
+            android:maxHeight="100dp"
+            android:src="@drawable/prince_0"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:riv_border_width="5dp"
+            app:riv_border_color="#F9CB4D"
+            app:riv_oval="false"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/thumbs4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/thumbdesc"
+            android:maxHeight="100dp"
+            android:src="@drawable/prince_0"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:riv_border_width="5dp"
+            app:riv_border_color="#F9CB4D"
+            app:riv_oval="false" />
+    </LinearLayout>
+
+</RelativeLayout>

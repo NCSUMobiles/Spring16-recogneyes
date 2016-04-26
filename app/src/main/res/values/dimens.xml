@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+	<dimen name="game_vertical_margin">12dp</dimen>
+	<dimen name="game_horizontal_margin">12dp</dimen>
+	<dimen name="game_padding">5dp</dimen>
+	<dimen name="frame_diff">25dp</dimen>
+	<dimen name="inter_options_diff">10dp</dimen>
+	<dimen name="inter_progres_margin">3dp</dimen>
+	<dimen name="game_option_padding">5dp</dimen>
+
+    <!--Main image size-->
+    <dimen name="main_image">200dp</dimen>
+    <dimen name="main_image_large">250dp</dimen>
+    <!--Answer choices size-->
+    <dimen name="answer">80dp</dimen>
+    <dimen name="answer_large">85dp</dimen>
+    <!--Match/Correlate Text Size-->
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_large">25sp</dimen>
+    <!--Match/Correlate countdown size-->
+    <dimen name="countdown_layout_width_small">50dp</dimen>
+    <dimen name="countdown_layout_width_large">60dp</dimen>
+    <dimen name="countdown_small">40dp</dimen>
+    <dimen name="countdown_large">50dp</dimen>
+    <!--Match/Correlate Padding size-->
+    <dimen name="dots_padding_large">12dp</dimen>
+    <dimen name="dots_padding">8dp</dimen>
+    <dimen name="dots_padding_medium">3dp</dimen>
+    <!--OMO dot horizontal spacing-->
+    <dimen name="omo_dot_size_small">10dp</dimen>
+    <dimen name="omo_dot_size_medium">15dp</dimen>
+    <dimen name="omo_dot_space_tiny">8dp</dimen>
+    <dimen name="omo_dot_space_medium">10dp</dimen>
+    <!--OMO margin spacing-->
+    <dimen name="omo_grid_marginTop_small">20dp</dimen>
+    <dimen name="omo_grid_marginTop_large">40dp</dimen>
+    <dimen name="omo_score_marginTop_small">10dp</dimen>
+    <dimen name="omo_topic_marginTop_small">10dp</dimen>
+    <!--OMO font size-->
+    <dimen name="omo_text_title_small">18sp</dimen>
+    <dimen name="omo_text_title_large">20sp</dimen>
+    <dimen name="omo_score_small">18sp</dimen>
+    <dimen name="omo_topic_small">18sp</dimen>
+    <dimen name="omo_text_small">16sp</dimen>
+    <dimen name="omo_text_large">18sp</dimen>
+    <!--Padding for rounded_grey_bg-->
+    <dimen name="omo_grey_bg_padding">3dp</dimen>
+
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+</resources>

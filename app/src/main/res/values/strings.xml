@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--UI elements-->
+    <string name="app_name">Match</string>
+    <string name="play">Play</string>
+    <string name="cancel">Nah!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="desc">Image for the Game</string>
+    <string name="title_activity_start__game">Start_Game</string>
+    <string name="title_activity_start_game">StartGameActivity</string>
+    <string name="launch_button_text">PLAY</string>
+    <string name="title_activity_theme">ThemeActivity</string>
+    <string name="facebook_button">FACEBOOK</string>
+    <string name="theme_title">SELECT THEME</string>
+    <string name="start_game">START</string>
+    <string name="theme_display_image">Image that represents category</string>
+    <string name="title_activity_theme_controller">ThemeControllerActivity</string>
+    <string name="title_activity_transition_score">TransitionScoreActivity</string>
+    <string name="thumbdesc">Options of the game</string>
+    <string name="transit_score_title">YOU SCORED</string>
+    <string name="title_activity_game_manager">GameManagerActivity</string>
+    <string name="theme_options">Options Image</string>
+    <string name="theme_albums">Albums Image</string>
+    <string name="title_activity_albums">Choose an album</string>
+    <string name="albumchooser">Choose a Library</string>
+    <string name="back_button_desc">Back Button Description</string>
+    <string name="transit_highscore">HIGH SCORE</string>
+    <string name="view_leaderboard">VIEW LEADERBOARD</string>
+    
+    <string name="sync">Sync</string>
+    
+    <!--OAuth error messages for GAE Backend -->
+    <string name="toast_no_google_account_selected">No Google Account selected!</string>
+    <string name="toast_exception_checking_authorization">Exception checking authorization!</string>
+    <string name="toast_no_google_accounts_registered">No Google Accounts registered!</string>
+    <string name="toast_only_one_google_account_registered">Only one Google Account registered!</string>
+
+    <!--Main menu-->
+    <string name="match_button">MATCH</string>
+
+    <!--Match/Correlate resources-->
+    <string name="totalPoints">0</string>
+
+    <!--GameManager Button resources-->
+    <string name="start_buton">GO</string>
+    <string name="next_button">NEXT</string>
+
+    <!--Timer stuff-->
+    <string name="timerText">Timer:</string>
+    <string name="timerVal">0</string>
+    <string name="scoreText">Score:</string>
+    <string name="scoreVal">0s</string>
+
+    <!--Settings elements-->
+    <string-array name="effects_array">
+        <item name="None">None</item>
+        <item name="Fade In">Fade In</item>
+        <item name="Slide In">Slide In</item>
+        <item name="Blur">Blur</item>
+        <item name="Pixelate">Pixelate</item>
+        <item name="Circle">Circle</item>
+        <item name="Reverse Circle">Reverse Circle</item>
+        <item name="Masked Reverse Circle">Masked Reverse Circle</item>
+        <item name="Horizontal Scan">Horizontal Scan</item>
+        <item name="Horizontal Scan">Vertical Scan</item>
+    </string-array>
+
+    <string-array name="gameplay_array">
+        <item name="Correlate">Correlate</item>
+        <item name="Match">Match</item>
+    </string-array>
+
+    <string-array name="rotation">
+        <item name="None">None</item>
+        <item name="Rotate 90 degrees">Rotate 90 degrees</item>
+        <item name="Rotate 180 degrees">Rotate 180 degrees</item>
+        <item name="Rotate 270 degrees">Rotate 270 degrees</item>
+    </string-array>
+
+    <string-array name="thickness">
+        <item name="Thick">Thick</item>
+        <item name="Normal">Normal</item>
+        <item name="Thin">Thin</item>
+        <item name="Thinnest">Thinnest</item>
+    </string-array>
+
+    <string-array name="speed">
+        <item name="Slow">Slow</item>
+        <item name="Medium">Medium</item>
+        <item name="Fast">Fast</item>
+        <item name="Fastest">Fastest</item>
+    </string-array>
+
+    <!--Fun facts and Character dialogue-->
+    <string name="pedagog_title">Did you know?</string>
+    <string name="pedagog_desc">Ibusdae Quibus Dolenet Ommolorese.Doluptatium Eumenih Illenim Usapica TemperoEatur, To Miliquam Que Comnis Explit Verruptatem. Nequia Cuptatusciis Suntio. Hitium Que Doluptae Et Lam, Voluptibus Ideris Dis Essumquias Duntiae Rspiet Re Lam Fugitature</string>
+    <string name="Test">test</string>
+
+    <!--Mustaches-->
+    <string name="mustaches_str">They\'re Seasonal\n\nMustache hair grows faster than any other body hair. It sprouts more in spring and summer than in autumn and winter.</string>
+
+    <string name="city_skylines_str">From 2000 to 2013, the total number of 200-meter-plus buildings in existence increased an astounding 318 percent from 261 to 830.</string>
+    <string name="aliens_str">Although some self-styled experts allege mysterious natural causes or alien origin, there is a scientific consensus that nearly all crop cirlce cases are man-made.</string>
+    <string name="art_str">When Van Gogh first began painting, he used peasants as models and later would paint flowers, landscapes and himself, mostly because he was too poor to pay the models.</string>
+    <string name="superheroes_str">Some superheroes, such as Batman, Green Arrow, Hawkeye and the Question possess no superhuman powers but have mastered skills such as martial arts and forensic sciences to a highly remarkable degree.</string>
+    <string name="usflags_str">The date May 20th 1775, above the letters on the North Carolina flag recalls the Mecklenburg Declaration of Independence</string>
+    <string name="dogs_str">A bloodhound can have up to 300 million scent receptors in its nose, as compared to the 5 million receptors that each human posesses.</string>
+    <string name="dog_breed_str">Irish Wolfhounds are the biggest dogs in the land</string>
+    <string name="presidents_str">Ulysses S. Grant was given a $20 speeding ticket for riding his horse too fast down a Washington street.</string>
+    <string name="microscopic_str">Under a microscope, a mento would resemble the appearnce of a highly cratered moon.</string>
+    <string name="animal_patterns_str">Animals mimic both their environment and more dangerous species in order to survive in preadatorial climates.</string>
+    <string name="cartoons_str">South Park creators Trey Parker and Matt Stone created the musical The Book of Morman, which has acquired nine Tony Awards since it\'s inception in 2011.</string>
+    <string name="celeb_yearbook_str">Actress Zooey Deschanel\'s name was taken from novelist J.D. Salinger\'s notable male character of &quot;Franny and Zooey&quot;.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!--Superheroes-->
+    <string name="spiderman">Spiderman</string>
+    <string name="batman">Batman</string>
+    <string name="captain">Captain America</string>
+    <string name="flash">Flash</string>
+    <string name="gambit">Gambit</string>
+    <string name="hulk">Hulk</string>
+    <string name="ironman">Iron Man</string>
+    <string name="storm">Storm</string>
+    <string name="superman">Superman</string>
+    <string name="wonder">Wonder Woman</string>
+
+    <!--Sources:
+    http://listverse.com/2015/03/07/10-amazing-facts-about-spider-man/
+    http://www.quicktoptens.com/top-tens/entertainment/top-10-awesome-facts-captain-america
+    http://whatculture.com/comics/20-mind-blowing-facts-didnt-know-about-batman.php/13
+    http://listverse.com/2014/11/17/10-lightning-fast-flash-facts/
+    http://www.funtrivia.com/en/Entertainment/X-Men/Question861444_E0750C.html
+    http://www.atomica.com/article/1292032/10-facts-you-didnt-know-about-the-hulk?s=3
+    http://screencrush.com/iron-man-facts/
+    http://www.thegeektwins.com/2014/12/10-cool-facts-you-never-knew-about.html#.VgDJebQ_5BU
+    http://listverse.com/2014/05/02/10-things-you-might-not-know-about-superman/
+    http://screenrant.com/10-facts-you-need-to-know-about-wonder-woman/?view=all
+    -->
+
+    <string name="batman_fact">Scottish patriot King Bruce I of Scotland (who led the Wars of Scottish Independence) provided
+        the Caped Crusader’s first name, while brigadier general Anthony Wayne (a hero of the American
+        Revolutionary War) is responsible for the surname.</string>
+    <string name="captain_fact">Captain America is very much worthy and during a battle he lifted
+        Thor’s hammer and managed to use it against his foes. Never has a level of awesomeness been so high.</string>
+    <string name="flash_fact">The Flash is faster than Superman. While Superman is enhanced by the yellow Sun,
+        he still has to obey basic physics, including friction. The Flash is powered by the
+        nigh-magical Speed Force, which allows him to tap into speed that others simply cannot.</string>
+    <string name="gambit_fact">Gambit\'s real name is Remy Lebeau. A thief by
+        nature and a hero at heart. He\'s first introduced to the world by saving an age regressed Storm
+        from the clutches of the Shadow King. </string>
+    <string name="hulk_fact">When "The Incredible Hulk" first hit the shelves, the Green Giant was
+        actually grey. The printers were unable to keep the grey coloration consistent, and Stan Lee
+        decided to change his color to green so it woul be easier to print.</string>
+    <string name="ironman_fact">When fully powered, Tony Stark can lift up to 100 tons in the Iron Man suit.
+        Pretty impressive considering that the Hulk\'s maximum lift (when calm) is 100 tons as well.
+    </string>
+    <string name="spiderman_fact">Spiderman has been in love with four women! In chronological order: Betty Brant, Gwen Stacy,
+    Felicia Hardy (aka the Black Cat), and finally Mary Jane.</string>
+    <string name="storm_fact">Storm first appeared in Giant-Size X-Men #1 (1975) written by Len Wein
+        and penciled by Dave Cockrum. She was one of the first black comic book characters, and is the
+        first black female in mainstream comics.</string>
+    <string name="superman_fact">The most bizarre form of kryptonite was surely the pink version from
+        an alternate timeline, unveiled in “Supergirl (Vol. 4) No. 79.” Instead of weakening Superman,
+        it leaves him with gay tendencies.</string>
+    <string name="wonder_fact">Wonder Woman\'s bracelets keep her powers in-check. Wonder Woman
+        once removed her bracelets in order to fight a God, explaining that the bracelets are what
+        actually protected her opponents from her intense power.</string>
+
+    <!--Misc-->
+    <string name="title_activity_gif">Experiment Room</string>
+
+    <string name="dummy_button">Dummy Button</string>
+</resources>

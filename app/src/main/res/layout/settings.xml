@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@drawable/recognize_2015_bg"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat"/>
+
+    <TextView
+        android:id="@+id/tvDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_vertical_margin"
+        android:layout_marginTop="3dp"
+        android:text="Difficulty"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="0dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.5">
+
+            <RadioButton
+                android:id="@+id/radioEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Easy"
+                android:textColor="#FFFFFF"
+                android:buttonTint="@color/abc_background_cache_hint_selector_material_light"/>
+
+            <RadioButton
+                android:id="@+id/radioMed"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:text="Medium"
+                android:textColor="#FFFFFF"
+                android:buttonTint="@color/abc_background_cache_hint_selector_material_light"/>
+
+            <RadioButton
+                android:id="@+id/radioHard"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:text="Hard"
+                android:textColor="#FFFFFF"
+                android:buttonTint="@color/abc_background_cache_hint_selector_material_light"/>
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/soundSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Sounds"
+            android:textColor="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/effectChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="Effects"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/game_vertical_margin"
+            android:layout_marginTop="@dimen/game_vertical_margin"
+            android:background="#81817E"
+            android:id="@+id/effectSpinner"
+            android:spinnerMode="dropdown"
+            />
+        <Spinner
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/game_vertical_margin"
+            android:layout_marginTop="@dimen/game_vertical_margin"
+            android:background="#81817E"
+            android:id="@+id/rotationSpinner"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thicknessChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="Scan Line"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+
+        <Spinner
+            android:id="@+id/thicknessSpinner"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/game_vertical_margin"
+            android:layout_marginTop="@dimen/game_vertical_margin"
+            android:background="#81817E"
+            android:spinnerMode="dropdown"
+            />
+
+        <Spinner
+            android:id="@+id/speedSpinner"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/game_vertical_margin"
+            android:layout_marginTop="@dimen/game_vertical_margin"
+            android:background="#81817E"
+            android:spinnerMode="dropdown"
+            />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/gameplay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/game_vertical_margin"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="3dp"-->
+        <!--android:text="Gameplay"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="#FFFFFF" />-->
+
+    <!--<Spinner-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="@dimen/game_vertical_margin"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="#81817E"-->
+        <!--android:id="@+id/gameplaySpinner"-->
+        <!--android:spinnerMode="dropdown"/>-->
+
+</LinearLayout>

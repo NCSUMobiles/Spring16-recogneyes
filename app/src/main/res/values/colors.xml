@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="darker_orange" type="color">#f6921e</item>
+    <item name="purple" type="color">#662d90</item>
+</resources>
